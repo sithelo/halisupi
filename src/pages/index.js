@@ -1,3 +1,4 @@
-import React from "react"
+import React from "react";
+import layout from '../components/layout';
 
-export default () => <div>... under construstion</div>
+export default () => <layout>... under construstion</layout>
