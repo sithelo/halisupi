@@ -1,21 +1,34 @@
 import React from "react";
-// import Title from "../Title"
+import Title from "../title";
 import styles from "../../css/about.module.css";
-// import Img from "gatsby-image";
-// import img from "../../images/defaultBcg.jpeg"
+import Img from "gatsby-image";
+import { useStaticQuery, graphql } from "gatsby"
 
 const About = () => {
+  const { aboutImage } = useStaticQuery(
+    graphql`
+      query {
+        aboutImage: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+          childImageSharp {
+            fluid(maxWidth: 600) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
+      }
+    `
+  )
   return (
     <section className={styles.about}>
-      {/* <Title title="about" subtitle="us" /> */}
+      <Title title="about" subtitle="us" />
       <div className={styles.aboutCenter}>
         <article className={styles.aboutImg}>
           <div className={styles.imgContainer}>
             {/* <img src={img} alt="about company" /> */}
-            {/* <Img
-              //   fluid={aboutImage.childImageSharp.fluid}
-              alt="about backroads"
-            /> */}
+            <Img
+              fluid={aboutImage.childImageSharp.fluid}
+              alt="about halisupi"
+            />
           </div>
         </article>
         <article className={styles.aboutInfo}>
