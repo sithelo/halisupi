@@ -34,14 +34,16 @@ const About = () => {
         <article className={styles.aboutInfo}>
           <h4>explore the difference</h4>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis amet
-            aliquam animi molestias vero velit consectetur, excepturi
-            consequatur odit temporibus.
+          Halisupi (Pty) Ltd is aimed at providing clients with best quality products and services 
+          which exceed customer expectations in plumbing and construction industry and to create 
+          long-term relationships with our clients.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-            cupiditate perferendis veniam veritatis suscipit. Vitae dicta quo
-            animi? Laborum, optio.
+          We do our best with each job that we do. Be it plumbing or construction we always do our very best. 
+          We pride ourselves in service excellence, a happy, satisfied client always makes our job so worthwhile.
+          </p>
+          <p>
+          Halisupi is 50 % women owned.
           </p>
           <button type="button" className="btn-primary">
             read more
